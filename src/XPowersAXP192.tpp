@@ -272,6 +272,12 @@ public:
         writeRegister(XPOWERS_AXP192_IPS_SET, val | (opt << 3));
     }
 
+
+    uint8_t getChargerStatus(void)
+    {
+        return 0;
+    }
+
     /**
     * @brief  Set VBUS Current Input Limit.
     * @param  opt: View the related chip type xpowers_axp192_vbus_cur_limit_t enumeration
