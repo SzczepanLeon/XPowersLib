@@ -644,11 +644,11 @@ public:
 
     virtual uint8_t getChargerStatus(void) = 0;
 
-    virtual uint16_t getDC1Voltage(void);
+    virtual uint16_t getDC1Voltage(void) = 0;
 
-    virtual uint16_t getALDO2Voltage(void);
+    virtual uint16_t getALDO2Voltage(void) = 0;
 
-    virtual uint16_t getALDO3Voltage(void);
+    virtual uint16_t getALDO3Voltage(void) = 0;
 
 protected:
 
