@@ -642,6 +642,8 @@ public:
 
     virtual float getTemperature(void) = 0;
 
+    virtual uint8_t getChargerStatus(void) = 0;
+
 protected:
 
     void setChipModel(uint8_t m)
