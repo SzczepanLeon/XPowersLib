@@ -646,6 +646,10 @@ public:
 
     virtual uint16_t getDC1Voltage(void);
 
+    virtual uint16_t getALDO2Voltage(void);
+
+    virtual uint16_t getALDO3Voltage(void);
+
 protected:
 
     void setChipModel(uint8_t m)
