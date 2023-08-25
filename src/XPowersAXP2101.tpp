@@ -323,12 +323,12 @@ public:
         return getRegisterBit(XPOWERS_AXP2101_STATUS2, 3) == 0 && isVbusGood();
     }
 
-    xpowers_chg_status_t getChargerStatus(void)
+    uint8_t getChargerStatus(void)
     {
-        int val = readRegister(XPOWERS_AXP2101_STATUS2);
+        uint8_t val = readRegister(XPOWERS_AXP2101_STATUS2);
         if (val == -1)return XPOWERS_AXP2101_CHG_STOP_STATE;
         val &= 0x07;
-        return (xpowers_chg_status_t)val;
+        return val;
     }
 
     /*
