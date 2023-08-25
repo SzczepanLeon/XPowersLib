@@ -640,6 +640,8 @@ public:
         return __chipModel;
     }
 
+    virtual float getTemperature(void) = 0;
+
 protected:
 
     void setChipModel(uint8_t m)
