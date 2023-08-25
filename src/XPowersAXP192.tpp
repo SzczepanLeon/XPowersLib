@@ -376,7 +376,11 @@ public:
     }
 
 
+    virtual uint16_t getDC1Voltage(void) { return 0; }
 
+    virtual uint16_t getALDO2Voltage(void) { return 0; }
+
+    virtual uint16_t getALDO3Voltage(void) { return 0; }
 
 
     /**
