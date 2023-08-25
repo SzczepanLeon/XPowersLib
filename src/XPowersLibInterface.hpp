@@ -644,6 +644,8 @@ public:
 
     virtual uint8_t getChargerStatus(void) = 0;
 
+    virtual uint16_t getDC1Voltage(void);
+
 protected:
 
     void setChipModel(uint8_t m)
