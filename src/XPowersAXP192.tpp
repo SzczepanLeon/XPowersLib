@@ -375,12 +375,9 @@ public:
         clrRegisterBit(XPOWERS_AXP192_CHARGE1, 7);
     }
 
+    uint16_t getALDO2Voltage(void) { return 0; }
 
-    virtual uint16_t getDC1Voltage(void) { return 0; }
-
-    virtual uint16_t getALDO2Voltage(void) { return 0; }
-
-    virtual uint16_t getALDO3Voltage(void) { return 0; }
+    uint16_t getALDO3Voltage(void) { return 0; }
 
 
     /**
