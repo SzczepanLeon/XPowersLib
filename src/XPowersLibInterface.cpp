@@ -101,12 +101,6 @@ bool XPowersLibInterface::getProtectedChannel(uint8_t channel)
     return __protectedMask & _BV(channel);
 }
 
-
-uint16_t XPowersLibInterface::getVbusVoltage()
-{
-    return 0;
-}
-
 static uint64_t inline check_params(uint32_t opt, uint32_t params, uint64_t mask)
 {
     return ((opt & params) == params) ? mask : 0;
